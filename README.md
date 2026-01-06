@@ -1,7 +1,9 @@
 # Första hemsidan - ett guidat mall-repo
 
-Detta repo är en mall och ett kursmaterial för dig som vill lära dig att bygga  
-din **första egna hemsida** gratis med Github Pages. I första lektionerna kommer  det visa dig hur du steg för steg bygger den enkelt med **HTML, CSS och enkel JavaScript**. Senare kommer det gå vidare med lektioner som gör den till Webbapp, använder ramverket Svelte och slutligen AI som verktyg.
+**Välkommen!** 👋  
+Detta repo är en mall och ett kursmaterial för dig som vill lära dig att bygga din **första egna hemsida** gratis med GitHub Pages.
+
+I de första lektionerna kommer du steg för steg att bygga en enkel hemsida med **HTML, CSS och enkel JavaScript**. Senare går kursen vidare med lektioner som gör den till en webbapp, introducerar ramverket **Svelte**, och slutligen hur **AI** kan användas som verktyg i arbetet.
 
 Allt sker:
 - i webbläsaren
@@ -9,8 +11,8 @@ Allt sker:
 - utan installation
 - utan krav på egen dator (surfplatta fungerar också)
 
-Detta kan vara första gången du använder GitHub.  
-Det är helt okej. Du kommer här lära dig både att skapa en hemsida från grunden, men också ett bra att spara varje steg så att det går att gå tillbaka om något inte blev som du tänkt dig.
+Detta kan vara första gången du använder GitHub. Det är helt okej.  
+Du kommer här lära dig både att skapa en hemsida från grunden, och hur man sparar varje steg så att det går att gå tillbaka om något inte blev som du tänkt dig.
 
 ---
 
@@ -19,13 +21,14 @@ Det är helt okej. Du kommer här lära dig både att skapa en hemsida från gru
 För att kunna delta behöver du ett **gratis GitHub-konto**.
 
 ### Skapa konto
-1. Gå till sidan för att skapa ett konto: https://github.com/signup (<a href="https://github.com/signup" target="_blank">Öppna i nytt fönster/tab</a>)
+1. Gå till sidan för att skapa ett konto: https://github.com/signup  
+   (<a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">Öppna i nytt fönster/tab</a>)
 2. Fyll i:
    - e-postadress
    - lösenord
    - användarnamn
 3. Följ stegen tills kontot är skapat
-4. Kom tillbaka och uppdatera den här sidan
+4. Kom tillbaka hit och **uppdatera sidan** 🔄
 
 👉 Det kostar ingenting.
 
@@ -33,9 +36,10 @@ För att kunna delta behöver du ett **gratis GitHub-konto**.
 
 ### Logga in
 Om du redan har ett konto:
-1. Gå till sidan för login: https://github.com/login (<a href="https://github.com/login" target="_blank">Öppna i nytt fönster/tab</a>)
+1. Gå till sidan för login: https://github.com/login  
+   (<a href="https://github.com/login" target="_blank" rel="noopener noreferrer">Öppna i nytt fönster/tab</a>)
 2. Logga in med ditt användarnamn och lösenord
-3. Kom tillbaka och uppdatera den här sidan
+3. Kom tillbaka hit och **uppdatera sidan** 🔄
 
 När du är inloggad kan du börja kursen.
 
@@ -56,6 +60,35 @@ Nu har du skapat **din egen kopia** av kursmaterialet.
 
 Det är i *din* kopia du kommer att arbeta.  
 Du ändrar ingenting i kursens original.
+
+---
+
+## Se din hemsida på webben (URL)
+
+När du har skapat ditt eget repo publiceras din hemsida automatiskt med GitHub Pages.  
+Den uppdateras varje gång du gör en **commit**.
+
+### Din webbadress (URL) ser ut så här:
+`https://DITT-GITHUB-NAMN.github.io/DITT-REPO-NAMN/`
+
+Exempel:
+- GitHub-namn: `anna123`
+- Repo-namn: `min-forsta-hemsida`
+
+Då blir adressen:
+`https://anna123.github.io/min-forsta-hemsida/`
+
+### Hitta länken i GitHub (säkraste sättet)
+1. Gå till ditt repo
+2. Klicka på **Settings**
+3. Klicka på **Pages**
+4. Där står en rad i stil med: *“Your site is live at …”*  
+   Klicka på länken som visas.
+
+### Om du inte ser ändringen direkt
+1. Vänta några sekunder (ibland upp till 1 minut)
+2. Uppdatera sidan i webbläsaren 🔄  
+   (knappen **Uppdatera sida** / **Refresh**, ofta symbolen 🔄)
 
 ---
 
@@ -113,7 +146,8 @@ Det är medvetet enkelt.
 3. Ändra texten i rubriken
 4. Klicka **Commit changes**
 
-Efter några sekunder uppdateras sidan automatiskt.
+Efter några sekunder uppdateras sidan automatiskt.  
+Om ändringen inte syns direkt: uppdatera webbsidan 🔄
 
 Du har nu publicerat din första hemsida.
 
@@ -121,7 +155,7 @@ Du har nu publicerat din första hemsida.
 
 ## Hur du går vidare till nästa lektion
 
-När det är dags att gå vidare i kursen gör du så här:
+När det är dags att gå vidare till nästa steg gör du så här:
 
 1. Klicka på fliken **Pull requests**
 2. Klicka **New pull request**
@@ -159,11 +193,11 @@ Fel är information.
 
 Efter Lesson 1 kommer kursen att fortsätta med:
 - innehåll som hämtas från data (JSON)
-- JavaScript som bygger sidan automatiskt
+- JavaScript som bygger sidan automatiskt (DOM)
 - listor och tabeller från data
 - ändra innehåll direkt på sidan
 - spara tillbaka till en datakälla
-- webbappar och ramverk
+- webbappar och ramverk (Svelte)
 - AI som stöd och verktyg
 
 Allt bygger vidare på det du gör här.
@@ -181,4 +215,4 @@ Du bygger steg för steg.
 Du behåller det du skapar.  
 Du ser exakt vad som tillkommer.
 
-Välkommen – nu börjar vi.
+**Välkommen – nu börjar vi.**
