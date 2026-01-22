@@ -1,0 +1,67 @@
+# ==========================================================
+# GitHub Actions – Publicera hemsidan till GitHub Pages
+#
+# Den här filen talar om för GitHub:
+# - NÄR hemsidan ska publiceras
+# - VAD som ska publiceras
+# - HUR det ska göras automatiskt
+#
+# Varje gång någon sparar (commit) till main:
+# → körs detta flöde
+# → innehållet publiceras som en webbplats
+# ==========================================================
+
+name: Deploy to GitHub Pages
+
+# När ska detta köras?
+on:
+  # Kör automatiskt när något ändras i main
+  push:
+    branches:
+      - main
+
+  # Gör det även möjligt att starta manuellt via GitHub-gränssnittet
+  workflow_dispatch:
+
+# Vilka rättigheter workflowet behöver
+permissions:
+  contents: read      # läsa innehållet i repot
+  pages: write        # skriva till GitHub Pages
+  id-token: write     # behövs för säker publicering
+
+# Se till att bara en publicering körs åt gången
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # Detta jobb körs på en virtuell Linux-maskin hos GitHub
+    runs-on: ubuntu-latest
+
+    # Koppling till GitHub Pages-miljön
+    environment:
+      name: github-pages
+      # URL:en till den publicerade sidan visas här efter körning
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # 1. Hämta innehållet från repot
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Förbered GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 3. Tala om vad som ska publiceras
+      # Här säger vi: "publicera allt som finns i repot"
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # 4. Publicera innehållet som en webbplats
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
