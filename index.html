@@ -5,6 +5,14 @@
     <title>Johan Broo</title>
     <style>
 body {
+  <button id="to-top">Till toppen</button>
+  <script>
+  const toTopButton = document.getElementById("to-top");
+
+  toTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
   background-color: hotpink;
   font-family: Comic sans MS;
 }
