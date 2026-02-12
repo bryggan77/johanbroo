@@ -1,1 +1,38 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Om mig</title>
+<style>
+body {
+  font-family: Arial;
+  background: hotpink;
+}
 
+nav {
+  background: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Start</a>
+  <a href="om.html">Om mig</a>
+  <a href="hobby.html">Aktiviteter</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<h1>Om Johan Broo</h1>
+<p>Här skriver jag mer om mitt liv.</p>
+
+</body>
+</html>
