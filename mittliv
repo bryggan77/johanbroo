@@ -2,11 +2,13 @@
 <html lang="sv">
 <head>
 <meta charset="utf-8">
-<title>Om mig</title>
+<title>Mitt liv - Johan Broo</title>
+
 <style>
 body {
-  font-family: Arial;
-  background: hotpink;
+  background-color: hotpink;
+  font-family: "Comic Sans MS", sans-serif;
+  padding: 20px;
 }
 
 nav {
@@ -16,8 +18,13 @@ nav {
 
 nav a {
   color: white;
-  margin: 10px;
   text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: yellow;
 }
 </style>
 </head>
@@ -26,34 +33,16 @@ nav a {
 
 <nav>
   <a href="index.html">Start</a>
-  <a href="om.html">Om mig</a>
+  <a href="mittliv.html">Mitt Liv</a>
   <a href="hobby.html">Aktiviteter</a>
   <a href="kontakt.html">Kontakt</a>
 </nav>
 
-<h1>Om Johan Broo</h1>
-<p>Här skriver jag mer om mitt liv.</p>
+<h1>Mitt liv</h1>
+
+<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag blev den jag är.</p>
+
+<p>Det hela började 1977 då jag föddes den 12 december...</p>
 
 </body>
-</html>
-<!doctype html>
-<html lang="sv">
-<head>
-<meta charset="utf-8">
-<title>Om mig</title>
-</head>
-<body>
-
-<nav>
-  <a href="index.html">Start</a>
-  <a href="om.html">Om mig</a>
-</nav>
-
-<h1>Om Johan Broo</h1>
-
-<h2>Mitt liv</h2>
-<p>Det hela började 1977 då jag föddes...</p>
-
-</body>
-<a href="mittliv.html">Mitt Liv</a>
 </html>
