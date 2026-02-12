@@ -2,55 +2,70 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-    <title>Johan Broo</title>
-    <style>
-body {
-  background-color: hotpink;
-  font-family: Comic sans MS;
-}
+  <title>Johan Broo</title>
 
-a {
-  color: green;
-}
-      /* unvisited link */
-a:link {
-  color: green;
-}
+  <style>
+    body {
+      background-color: hotpink;
+      font-family: "Comic Sans MS", sans-serif;
+      padding: 20px;
+    }
 
-/* visited link */
-a:visited {
-  color: darkgreen;
-}
+    a:link {
+      color: green;
+    }
 
-/* mouse over link */
-a:hover {
-  color: blue;
-}
+    a:visited {
+      color: darkgreen;
+    }
 
-/* selected link */
-a:active {
-  color: blue;
-}
-    </style>
-  </head>
-  <body>
-     <button id="to-top">Till toppen</button>
-  <script>
+    a:hover {
+      color: blue;
+    }
+
+    a:active {
+      color: blue;
+    }
+
+    #to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<button id="to-top">Till toppen</button>
+
+<script>
   const toTopButton = document.getElementById("to-top");
-
   toTopButton.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
-    <h1>Johan Broo</h1>
-    <p>Hej! Jag heter Johan Broo jag har skapat en hemsida där jag tänkte berätta lite om mig själv vad jag gör och vad jag gillar att göra.</p>
-    <h2>Mitt liv</h2>
-    <p>Jag tänkte först berätta lite om mig själv vem jag är hur jag har blivit den jag är och lite annat.</p>
-    <p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen jag föddes på Södertälje sjukhus <br /> men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p> 
-    <p> Jag bodde de första fem åren hos min pappa i Salemstaden, mamma och pappa skildes när jag var ett år så jag trodde när jag var liten att man bodde hemma hos pappa och besökte mamma ibland hon bodde inte så långt ifrån oss på den tiden.</p>
-  </body>
-  <h2>Aktiviteter jag gillar</h2>
-</html>
+
+<h1>Johan Broo</h1>
+
+<p>Hej! Jag heter Johan Broo. Jag har skapat en hemsida där jag tänkte berätta lite om mig själv, vad jag gör och vad jag gillar att göra.</p>
+
+<h2>Mitt liv</h2>
+
+<p>Jag tänkte först berätta lite om mig själv, vem jag är, hur jag har blivit den jag är och lite annat.</p>
+
+<p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus,<br>
+men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
+
+<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år, så jag trodde när jag var liten att man bodde hemma hos pappa och besökte mamma ibland.</p>
+
+<h2>Aktiviteter jag gillar</h2>
 
 <ul>
   <li>Musik</li>
@@ -60,20 +75,22 @@ a:active {
   <li>Film</li>
   <li>Sport</li>
 </ul>
+
 <p>
   Besök gärna
-  <a href="https://www.drop-d.se"
-     target="_blank"
-     rel="noopener noreferrer">
-     Drop D
+  <a href="https://www.drop-d.se" target="_blank" rel="noopener noreferrer">
+    Drop D
   </a>
   för mer information om mitt band.
-</p><p>
-  Besök gärna
-  <a href="https://www.bottennappet.nu"
-     target="_blank"
-     rel="noopener noreferrer">
-     Bottennappet i väst
-  </a>
-  för mer information om min fiskeförening som jag bedriver för personer som har det lite tufft.
 </p>
+
+<p>
+  Besök gärna
+  <a href="https://www.bottennappet.nu" target="_blank" rel="noopener noreferrer">
+    Bottennappet i väst
+  </a>
+  för mer information om min fiskeförening.
+</p>
+
+</body>
+</html>
