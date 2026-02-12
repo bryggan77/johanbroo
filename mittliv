@@ -36,3 +36,23 @@ nav a {
 
 </body>
 </html>
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Om mig</title>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Start</a>
+  <a href="om.html">Om mig</a>
+</nav>
+
+<h1>Om Johan Broo</h1>
+
+<h2>Mitt liv</h2>
+<p>Det hela började 1977 då jag föddes...</p>
+
+</body>
+</html>
