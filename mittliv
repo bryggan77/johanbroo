@@ -11,6 +11,7 @@ body {
   padding: 20px;
 }
 
+/* MENY */
 nav {
   background: black;
   padding: 10px;
@@ -33,16 +34,18 @@ nav a:hover {
 
 <nav>
   <a href="index.html">Start</a>
-  <a href="mittliv.html">Mitt Liv</a>
+  <a href="mittliv.html">Mitt liv</a>
   <a href="hobby.html">Aktiviteter</a>
   <a href="kontakt.html">Kontakt</a>
 </nav>
 
 <h1>Mitt liv</h1>
 
-<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag blev den jag är.</p>
+<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag har blivit den jag är.</p>
 
-<p>Det hela började 1977 då jag föddes den 12 december...</p>
+<p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
+
+<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år...</p>
 
 </body>
 </html>
