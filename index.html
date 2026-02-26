@@ -1,6 +1,244 @@
 <!doctype html>
 <html lang="sv">
 <head>
+  <meta charset="utf-8">
+  <title>Johan Broo</title>
+
+  <style>
+    nav {
+  background: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: yellow;
+}
+    body {
+      background-color: hotpink;
+      font-family: "Comic Sans MS", sans-serif;
+      padding: 20px;
+    }
+
+    a:link {
+      color: green;
+    }
+
+    a:visited {
+      color: darkgreen;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    a:active {
+      color: blue;
+    }
+
+    #to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+  <a href="index.html">Start</a>
+  <a href="mittliv.html">Mitt Liv</a>
+  <a href="hobby.html">Aktiviteter</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<button id="to-top">Till toppen</button>
+
+<script>
+  const toTopButton = document.getElementById("to-top");
+  toTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<h1>Johan Broo</h1>
+
+<p>Hej! Jag heter Johan Broo. Jag har skapat en hemsida där jag tänkte berätta lite om mig själv, vad jag gör och vad jag gillar att göra.</p>
+
+<h2>Mitt liv</h2>
+
+<p>Jag tänkte först berätta lite om mig själv, vem jag är, hur jag har blivit den jag är och lite annat.</p>
+
+<p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus,<br>
+men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
+
+<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år, så jag trodde när jag var liten att man bodde hemma hos pappa och besökte mamma ibland.</p>
+
+<h2>Aktiviteter jag gillar</h2>
+
+<ul>
+  <li>Musik</li>
+  <li>Fiske</li>
+  <li>Dyka</li>
+  <li>Dator</li>
+  <li>Film</li>
+  <li>Sport</li>
+</ul>
+
+<p>
+  Besök gärna
+  <a href="https://www.drop-d.se" target="_blank" rel="noopener noreferrer">
+    Drop D
+  </a>
+  för mer information om mitt band.
+</p>
+
+<p>
+  Besök gärna
+  <a href="https://www.bottennappet.nu" target="_blank" rel="noopener noreferrer">
+    Bottennappet i väst
+  </a>
+  för mer information om min fiskeförening.
+</p>
+
+</body>
+</html>
+
+Snyggt! 👏 Din kod är nästan perfekt och menyn är rätt gjord 👍
+Jag förklarar vad som funkar + vad du behöver göra för att “Mitt Liv” ska fungera som egen sida.
+
+✅ Din meny är korrekt kopplad
+
+Den här raden betyder:
+
+<a href="mittliv.html">Mitt Liv</a>
+
+👉 När du klickar på Mitt Liv försöker webbläsaren öppna filen:
+
+mittliv.html
+❗ Men just nu saknas filen
+
+För att det ska fungera måste du skapa en ny fil i GitHub:
+
+👉 mittliv.html
+
+✅ Så gör du mittliv.html (kopiera detta)
+
+Skapa en ny fil och klistra in:
+
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Mitt liv - Johan Broo</title>
+
+<style>
+body {
+  background-color: hotpink;
+  font-family: "Comic Sans MS", sans-serif;
+  padding: 20px;
+}
+
+nav {
+  background: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: yellow;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Start</a>
+  <a href="mittliv.html">Mitt Liv</a>
+  <a href="hobby.html">Aktiviteter</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<h1>Mitt liv</h1>
+
+<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag blev den jag är.</p>
+
+<p>Det hela började 1977 då jag föddes den 12 december...</p>
+
+</body>
+</html>
+⚠️ Liten CSS-grej (inte fel men bra att veta)
+
+Du har detta:
+
+nav a:hover {
+  color: yellow;
+}
+
+a:hover {
+  color: blue;
+}
+
+👉 Alla länkar blir blå när du hovrar, även i menyn.
+Men menyn vill du gul.
+
+Bättre lösning:
+nav a:hover {
+  color: yellow;
+}
+
+p a:hover {
+  color: blue;
+}
+✅ Viktigt för GitHub Pages
+
+Alla filer måste ligga i samma mapp:
+
+index.html
+mittliv.html
+hobby.html
+kontakt.html
+😎 Vill du göra detta PROFFSIGT?
+
+Jag kan visa hur du:
+
+✅ Har samma meny på alla sidor automatiskt (utan kopiera)
+✅ Har en snygg toppmeny som följer med när du scrollar
+✅ Lägger till bilder på dig, bandet, fiske osv
+✅ Gör en modern design (inte hotpink om du vill 😉)
+
+Vill du att jag gör en färdig mall för hela din hemsida som du bara laddar upp till GitHub?
+
+Kan du göra om grundkoden så mitt liv kommer länkas till min sida med mitt liv
+
+Ja 👍 jag kan göra om din grundkod så “Mitt liv” verkligen länkar till din sida med Mitt liv.
+Jag ger dig två färdiga filer: index.html (startsida) och mittliv.html (din livssida).
+
+Du kan bara kopiera dem rakt in i GitHub.
+
+✅ 1️⃣ Grundkod för STARTSIDAN (index.html)
+<!doctype html>
+<html lang="sv">
+<head>
 <meta charset="utf-8">
 <title>Johan Broo - Start</title>
 
@@ -44,3 +282,85 @@ nav a:hover {
 
 </body>
 </html>
+✅ 2️⃣ Sida för MITT LIV (mittliv.html)
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Mitt liv - Johan Broo</title>
+
+<style>
+body {
+  background-color: hotpink;
+  font-family: "Comic Sans MS", sans-serif;
+  padding: 20px;
+}
+
+/* MENY */
+nav {
+  background: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: yellow;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Start</a>
+  <a href="mittliv.html">Mitt liv</a>
+  <a href="hobby.html">Aktiviteter</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<h1>Mitt liv</h1>
+
+<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag har blivit den jag är.</p>
+
+<p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
+
+<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år...</p>
+
+</body>
+</html>
+✅ 3️⃣ Viktigt (annars funkar det inte)
+
+Alla filer måste ligga i samma GitHub-mapp:
+
+index.html
+mittliv.html
+hobby.html
+kontakt.html
+🧪 Testa
+
+Öppna din sida
+
+Klicka på Mitt liv i menyn
+➡️ Då ska din livssida öppnas.
+
+😎 Vill du?
+
+Jag kan göra så:
+
+Alla sidor får samma meny automatiskt (proffslösning)
+
+Snygg modern design istället för hotpink
+
+Bilder, musikspelare för ditt band, fiske-galleri
+
+“Till toppen”-knapp på alla sidor
+
+CV-sida
+
+Säg hur avancerad hemsida du vill ha (nybörjare, normal, proffs) 👍
