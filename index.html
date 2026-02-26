@@ -1,176 +1,96 @@
-
 <!doctype html>
 <html lang="sv">
 <head>
-<meta charset="utf-8">
-<title>Mitt liv - Johan Broo</title>
+  <meta charset="utf-8">
+  <title>Johan Broo</title>
 
-<style>
-body {
-  background-color: hotpink;
-  font-family: "Comic Sans MS", sans-serif;
-  padding: 20px;
-}
+  <style>
+    body {
+      background-color: hotpink;
+      font-family: "Comic Sans MS", sans-serif;
+      padding: 20px;
+    }
 
-nav {
-  background: black;
-  padding: 10px;
-}
+    a:link {
+      color: green;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-size: 18px;
-}
+    a:visited {
+      color: darkgreen;
+    }
 
-nav a:hover {
-  color: yellow;
-}
-</style>
+    a:hover {
+      color: blue;
+    }
+
+    a:active {
+      color: blue;
+    }
+
+    #to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Start</a>
-  <a href="mittliv.html">Mitt Liv</a>
-  <a href="hobby.html">Aktiviteter</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+<button id="to-top">Till toppen</button>
 
-<h1>Mitt liv</h1>
-
-<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag blev den jag är.</p>
-
-<p>Det hela började 1977 då jag föddes den 12 december...</p>
-
-</body>
-</html>
-⚠️ Liten CSS-grej (inte fel men bra att veta)
-
-Du har detta:
-
-nav a:hover {
-  color: yellow;
-}
-
-a:hover {
-  color: blue;
-}
-
-👉 Alla länkar blir blå när du hovrar, även i menyn.
-Men menyn vill du gul.
-
-Bättre lösning:
-nav a:hover {
-  color: yellow;
-}
-
-p a:hover {
-  color: blue;
-}
-
-<!doctype html>
-<html lang="sv">
-<head>
-<meta charset="utf-8">
-<title>Johan Broo - Start</title>
-
-<style>
-body {
-  background-color: hotpink;
-  font-family: "Comic Sans MS", sans-serif;
-  padding: 20px;
-}
-
-/* MENY */
-nav {
-  background: black;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-size: 18px;
-}
-
-nav a:hover {
-  color: yellow;
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-  <a href="index.html">Start</a>
-  <a href="mittliv.html">Mitt liv</a>
-  <a href="hobby.html">Aktiviteter</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+<script>
+  const toTopButton = document.getElementById("to-top");
+  toTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 <h1>Johan Broo</h1>
-<p>Välkommen till min hemsida! Här berättar jag om mitt liv och mina intressen.</p>
+
+<p>Hej! Jag heter Johan Broo. Jag har skapat en hemsida där jag tänkte berätta lite om mig själv, vad jag gör och vad jag gillar att göra.</p>
+
+<h2>Mitt liv</h2>
+
+<p>Jag tänkte först berätta lite om mig själv, vem jag är, hur jag har blivit den jag är och lite annat.</p>
+
+<p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus,<br>
+men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
+
+<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år, så jag trodde när jag var liten att man bodde hemma hos pappa och besökte mamma ibland.</p>
+
+<h2>Aktiviteter jag gillar</h2>
+
+<ul>
+  <li>Musik</li>
+  <li>Fiske</li>
+  <li>Dyka</li>
+  <li>Dator</li>
+  <li>Film</li>
+  <li>Sport</li>
+</ul>
+
+<p>
+  Besök gärna
+  <a href="https://www.drop-d.se" target="_blank" rel="noopener noreferrer">
+    Drop D
+  </a>
+  för mer information om mitt band.
+</p>
+
+<p>
+  Besök gärna
+  <a href="https://www.bottennappet.nu" target="_blank" rel="noopener noreferrer">
+    Bottennappet i väst
+  </a>
+  för mer information om min fiskeförening.
+</p>
 
 </body>
 </html>
-<!doctype html>
-<html lang="sv">
-<head>
-<meta charset="utf-8">
-<title>Mitt liv - Johan Broo</title>
-
-<style>
-body {
-  background-color: hotpink;
-  font-family: "Comic Sans MS", sans-serif;
-  padding: 20px;
-}
-
-/* MENY */
-nav {
-  background: black;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-size: 18px;
-}
-
-nav a:hover {
-  color: yellow;
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-  <a href="index.html">Start</a>
-  <a href="mittliv.html">Mitt liv</a>
-  <a href="hobby.html">Aktiviteter</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
-
-<h1>Mitt liv</h1>
-
-<p>Jag tänkte först berätta lite om mig själv, vem jag är och hur jag har blivit den jag är.</p>
-
-<p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
-
-<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år...</p>
-
-</body>
-</html>
-
-“Till toppen”-knapp på alla sidor
-
-CV-sida
-
-Säg hur avancerad hemsida du vill ha (nybörjare, normal, proffs) 👍
