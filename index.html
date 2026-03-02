@@ -39,6 +39,37 @@
       cursor: pointer;
     }
   </style>
+  /* ===== SNYGG MENY ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, purple, deeppink);
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+}
+
+nav a {
+  display: inline-block;
+  background: white;
+  color: purple;
+  text-decoration: none;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Hover-effekt */
+nav a:hover {
+  background: yellow;
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
 </head>
   <nav>
   <a href="index.html">Start</a>
