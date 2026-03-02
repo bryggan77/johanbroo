@@ -1,51 +1,25 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <title>Johan Broo</title>
+<meta charset="utf-8">
+<title>Johan Broo</title>
 
-  <style>
-    body {
-      background-color: hotpink;
-      font-family: "Comic Sans MS", sans-serif;
-      padding: 20px;
-    }
+<style>
+body {
+  background-color: hotpink;
+  font-family: "Comic Sans MS", sans-serif;
+  padding: 20px;
+  margin: 0;
+}
 
-    a:link {
-      color: green;
-    }
-
-    a:visited {
-      color: darkgreen;
-    }
-
-    a:hover {
-      color: blue;
-    }
-
-    a:active {
-      color: blue;
-    }
-
-    #to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 10px 15px;
-      background: black;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+/* ===== SNYGG MENY ===== */
 nav {
   position: sticky;
   top: 0;
   background: linear-gradient(90deg, purple, deeppink);
   padding: 15px;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 0 0 20px 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   margin-bottom: 30px;
 }
@@ -62,45 +36,53 @@ nav a {
   transition: all 0.3s ease;
 }
 
-/* Hover-effekt */
 nav a:hover {
   background: yellow;
   color: black;
   transform: scale(1.1);
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
+
+/* Övriga länkar */
+p a {
+  color: green;
+}
+
+p a:hover {
+  color: blue;
+}
+
+/* Till toppen-knapp */
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
 </head>
-  <nav>
+
+<body>
+
+<nav>
   <a href="index.html">Start</a>
   <a href="mittliv.html">Mitt liv</a>
   <a href="hobby.html">Aktiviteter</a>
   <a href="kontakt.html">Kontakt</a>
 </nav>
 
-<body>
-  nav {
-  background: black;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-size: 18px;
-}
-
-nav a:hover {
-  color: yellow;
-}
-
 <button id="to-top">Till toppen</button>
 
 <script>
-  const toTopButton = document.getElementById("to-top");
-  toTopButton.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+const toTopButton = document.getElementById("to-top");
+toTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 </script>
 
 <h1>Johan Broo</h1>
@@ -114,7 +96,7 @@ nav a:hover {
 <p>Det hela började 1977 då jag föddes den 12 december klockan 23.02 på kvällen. Jag föddes på Södertälje sjukhus,<br>
 men min födelseort är Salemstaden mellan Södertälje och Stockholm nära Rönninge.</p>
 
-<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år, så jag trodde när jag var liten att man bodde hemma hos pappa och besökte mamma ibland.</p>
+<p>Jag bodde de första fem åren hos min pappa i Salemstaden. Mamma och pappa skildes när jag var ett år.</p>
 
 <h2>Aktiviteter jag gillar</h2>
 
