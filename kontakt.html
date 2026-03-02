@@ -1,1 +1,105 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Kontakt - Johan Broo</title>
 
+<style>
+body {
+  margin: 0;
+  background-color: hotpink;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+/* ===== MENY ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, purple, deeppink);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+nav a {
+  display: inline-block;
+  background: white;
+  color: purple;
+  text-decoration: none;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a.active {
+  background: yellow;
+  color: black;
+}
+
+nav a:hover {
+  background: yellow;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Innehåll */
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.contact-box {
+  background: white;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  margin: 15px;
+}
+
+.contact-box a {
+  text-decoration: none;
+  font-size: 18px;
+  color: purple;
+  font-weight: bold;
+}
+
+.contact-box a:hover {
+  color: deeppink;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Start</a>
+  <a href="mittliv.html">Mitt liv</a>
+  <a href="hobby.html">Aktiviteter</a>
+  <a href="kontakt.html" class="active">Kontakt</a>
+</nav>
+
+<div class="container">
+
+<h1>Kontakt</h1>
+
+<div class="contact-box">
+  <p>🎵 Band</p>
+  <a href="mailto:johan@drop-d.se">johan@drop-d.se</a>
+</div>
+
+<div class="contact-box">
+  <p>🎣 Fiskeverksamhet</p>
+  <a href="mailto:johan@bottennappet.nu">johan@bottennappet.nu</a>
+</div>
+
+</div>
+
+</body>
+</html>
