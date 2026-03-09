@@ -1,1 +1,102 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Mitt galleri - Johan Broo</title>
 
+<style>
+body {
+  margin: 0;
+  background-color: hotpink;
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+/* ===== MENY ===== */
+nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, purple, deeppink);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+nav a {
+  display: inline-block;
+  background: white;
+  color: purple;
+  text-decoration: none;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a.active {
+  background: yellow;
+  color: black;
+}
+
+nav a:hover {
+  background: yellow;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* ===== GALLERI ===== */
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Start</a>
+  <a href="mittliv.html">Mitt liv</a>
+  <a href="hobby.html">Aktiviteter</a>
+  <a href="galleri.html" class="active">Mitt galleri</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<div class="container">
+
+<h1>Mitt galleri</h1>
+
+<p>Här kan du se bilder från mitt liv, musik, fiske och andra aktiviteter.</p>
+
+<div class="gallery">
+
+<img src="bild1.jpg" alt="Bild 1">
+<img src="bild2.jpg" alt="Bild 2">
+<img src="bild3.jpg" alt="Bild 3">
+<img src="bild4.jpg" alt="Bild 4">
+
+</div>
+
+</div>
+
+</body>
+</html>
